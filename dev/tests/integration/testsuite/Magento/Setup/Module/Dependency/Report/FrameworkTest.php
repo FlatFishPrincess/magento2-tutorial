@@ -32,7 +32,7 @@ class FrameworkTest extends \PHPUnit\Framework\TestCase
     protected function setUp()
     {
         $this->fixtureDir = realpath(__DIR__ . '/../_files') . '/';
-        $this->fixtureDirModule = $this->fixtureDir . 'code/Magento/FirstModule/';
+        $this->fixtureDirModule = $this->fixtureDir . 'code/Magento/SimplifiedMagento/';
         $this->sourceFilename = $this->fixtureDir . 'framework-dependencies.csv';
 
         $this->builder = ServiceLocator::getFrameworkDependenciesReportBuilder();

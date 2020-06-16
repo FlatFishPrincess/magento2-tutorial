@@ -59,7 +59,7 @@ class GeneratorTest extends \PHPUnit\Framework\TestCase
         ComponentRegistrar::register(
             ComponentRegistrar::MODULE,
             'Magento_FirstModule',
-            $this->source . '/app/code/Magento/FirstModule'
+            $this->source . '/app/code/Magento/SimplifiedMagento'
         );
         ComponentRegistrar::register(
             ComponentRegistrar::MODULE,

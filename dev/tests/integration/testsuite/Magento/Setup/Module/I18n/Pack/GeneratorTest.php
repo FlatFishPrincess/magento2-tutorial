@@ -58,7 +58,7 @@ class GeneratorTest extends \PHPUnit\Framework\TestCase
         $this->_packPath = $this->_testDir . '/pack';
         $this->_locale = 'de_DE';
         $this->_expectedFiles = [
-            "/app/code/Magento/FirstModule/i18n/{$this->_locale}.csv",
+            "/app/code/Magento/SimplifiedMagento/i18n/{$this->_locale}.csv",
             "/app/code/Magento/SecondModule/i18n/{$this->_locale}.csv",
             "/app/design/adminhtml/default/i18n/{$this->_locale}.csv",
         ];
@@ -91,7 +91,7 @@ class GeneratorTest extends \PHPUnit\Framework\TestCase
         ComponentRegistrar::register(
             ComponentRegistrar::MODULE,
             'Magento_FirstModule',
-            $this->_packPath . '/app/code/Magento/FirstModule'
+            $this->_packPath . '/app/code/Magento/SimplifiedMagento'
         );
         ComponentRegistrar::register(
             ComponentRegistrar::MODULE,

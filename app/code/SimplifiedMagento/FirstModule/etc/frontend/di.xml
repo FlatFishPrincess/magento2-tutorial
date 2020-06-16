@@ -1,0 +1,18 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference
+        for="Magento\Catalog\Api\ProductRepositoryInterface"
+        type="SimplifiedMagento\FirstModule\Model\CustomImplementation"
+    />
+    <preference
+        for="SimplifiedMagent\FirstModule\Api\PencilInterface"
+        type="SimplifiedMagento\FirstModule\Model\Pencil"
+    />
+    <preference
+        for="SimplifiedMagent\FirstModule\Api\Color"
+        type="SimplifiedMagento\FirstModule\Model\Yellow"
+    />
+    <preference
+        for="SimplifiedMagent\FirstModule\Api\Size"
+        type="SimplifiedMagento\FirstModule\Model\Normal"
+    />
+</config>
